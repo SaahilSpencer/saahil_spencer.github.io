@@ -1,0 +1,123 @@
+body {
+	background-color: #EEEEEE;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	font-family: Raleway;
+}
+
+.container {
+	width: 415px;
+	height: 627px;
+	background: rgb(2,0,36);
+	background: linear-gradient(0deg, #004B66 0%,  #0095CC 70%);
+	border-radius: 20px;
+	box-shadow: 0px 0px 99px #A4EAFF;
+}
+
+.logo {
+	background-image: url('https://1000logos.net/wp-content/uploads/2017/03/Nike-Logo.png');
+	background-size: cover;
+	width: 802px;
+	height: 384px;
+	transform: rotate(-32deg);
+	display: inline-block;
+	margin: 140 -80;
+}
+
+.platform {
+	background-color: #008CBF;
+	width: 308px;
+	height: 45px;
+	transform: rotate(32deg);
+	margin: 125 145;
+	border-radius: 100%;
+	box-shadow: 0px 5px 0px #6DDDFF;
+}
+
+@keyframes float {
+	transform: rotate(-45deg);
+	0% {
+		transform: translatey(0px) rotate(-45deg);
+	}
+	50% {
+		transform: translatey(-15px) rotate(-45deg);
+	}
+	100% {
+		transform: translatey(0px) rotate(-45deg);
+	}
+}
+
+.shoe {
+	background-image: url('https://hackernoon.com/drafts/fxs324c.png');
+	background-size: cover;
+	width: 349px;
+	height: 211px;
+	transform: rotate(-45deg);
+	margin: -235 -50;
+	position: absolute;
+	animation: float 3s ease-in-out infinite;
+}
+
+h1 {
+	position: absolute;
+	margin: 60 80;
+	color: #fff;
+	font-size: 20;
+	text-align: center;
+	font-weight: 4000;
+}
+
+.selector {
+	margin: 130 250;
+	position: absolute;
+}
+
+.color-selector {
+	margin: 0 60 0;
+	right: 0;
+	width: 34px;
+	height: 34px;
+	align-items: center;
+	background-color: #393939;
+	border-radius: 100%;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35), -3px -3px 6px rgba(255, 255, 255, 0.35);
+	position: absolute;
+	cursor: pointer;
+}
+
+.color-selector2 {
+	margin: 0 60 0;
+	right: 0;
+	width: 34px;
+	height: 34px;
+	align-items: center;
+	background-color: #FFFFFF;
+	border-radius: 100%;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35), -3px -3px 6px rgba(255, 255, 255, 0.35);
+	position: absolute;
+	cursor: pointer;
+}
+
+h2 {
+	position: absolute;
+	margin: 50 -40;
+	color: #fff;
+	font-size: 20;
+	text-align: center;
+	font-weight: 4000;
+}
+
+.button {
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 1px;
+	margin: 90 -100;
+	position: absolute;
+	background-color: #006C94;
+	padding: 7 48;
+	border-radius: 30px;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35), -3px -3px 6px rgba(255, 255, 255, 0.35);
+	cursor: pointer;
+}
