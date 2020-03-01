@@ -1,2 +1,0 @@
-# saahilspencer.github.io
-gdg
