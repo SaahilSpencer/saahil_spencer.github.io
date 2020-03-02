@@ -1,38 +1,23 @@
 body {
-	background-color: #EEEEEE;
-	justify-content: center;
+	width: 100vw;
+	height: 100vh;
 	display: flex;
+	background-color: #EEEEEE;
+	text-align: center;
 	align-items: center;
+	justify-content: center;
+	overflow: hidden;
 	font-family: Raleway;
 }
 
-.container {
+.card {
 	width: 415px;
 	height: 627px;
-	background: rgb(2,0,36);
-	background: linear-gradient(0deg, #004B66 0%,  #0095CC 70%);
+	background: linear-gradient(0deg, #004B66 0%,  #0095CC 90%);
+	display: grid;
 	border-radius: 20px;
+	justify-content: center;
 	box-shadow: 0px 0px 99px #A4EAFF;
-}
-
-.logo {
-	background-image: url('https://1000logos.net/wp-content/uploads/2017/03/Nike-Logo.png');
-	background-size: cover;
-	width: 802px;
-	height: 384px;
-	transform: rotate(-32deg);
-	display: inline-block;
-	margin: 140 -80;
-}
-
-.platform {
-	background-color: #008CBF;
-	width: 308px;
-	height: 45px;
-	transform: rotate(32deg);
-	margin: 125 145;
-	border-radius: 100%;
-	box-shadow: 0px 5px 0px #6DDDFF;
 }
 
 @keyframes float {
@@ -48,76 +33,112 @@ body {
 	}
 }
 
+.logo {
+	background-image: url('https://1000logos.net/wp-content/uploads/2017/03/Nike-Logo.png');
+	background-size: cover;
+	width: 802px;
+	height: 384px;
+	transform: rotate(-32deg);
+	position: absolute;
+	margin: 140 -80;
+}
+
 .shoe {
 	background-image: url('https://hackernoon.com/drafts/fxs324c.png');
 	background-size: cover;
 	width: 349px;
 	height: 211px;
 	transform: rotate(-45deg);
-	margin: -235 -50;
-	position: absolute;
 	animation: float 3s ease-in-out infinite;
+	margin: 90px 0 0 0;
+	z-index: 2;
+}
+
+.platform {
+	width: 360px;
+	height: 45px;
+	background: #008CBF;
+	box-shadow: 0px 5px 0px #6DDDFF;
+	border-radius: 100%;
+	z-index: 1;
+}
+
+.name {
+	z-index: 2;
 }
 
 h1 {
-	position: absolute;
-	margin: 60 80;
+	display: inline;
 	color: #fff;
 	font-size: 20;
 	text-align: center;
 	font-weight: 4000;
-}
-
-.selector {
-	margin: 130 250;
-	position: absolute;
 }
 
 .color-selector {
-	margin: 0 60 0;
-	right: 0;
-	width: 34px;
-	height: 34px;
-	align-items: center;
-	background-color: #393939;
-	border-radius: 100%;
-	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35), -3px -3px 6px rgba(255, 255, 255, 0.35);
-	position: absolute;
-	cursor: pointer;
+	z-index: 12;
+	
 }
 
-.color-selector2 {
-	margin: 0 60 0;
-	right: 0;
+.grey {
 	width: 34px;
 	height: 34px;
-	align-items: center;
+	background-color: #393939;
+	border-radius: 100%;
+	cursor: pointer;
+	display: inline-block;
+	margin: 10 10 0 0;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35), -3px -3px 6px rgba(255, 255, 255, 0.35);
+}
+
+.grey:hover {
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25), -3px -3px 3px rgba(255, 255, 255, 0.25);
+}
+
+.white {
+	width: 34px;
+	height: 34px;
 	background-color: #FFFFFF;
 	border-radius: 100%;
-	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35), -3px -3px 6px rgba(255, 255, 255, 0.35);
-	position: absolute;
 	cursor: pointer;
+	display: inline-block;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35), -3px -3px 6px rgba(255, 255, 255, 0.35);
+}
+
+.white:hover {
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25), -3px -3px 3px rgba(255, 255, 255, 0.25);
+}
+
+.price {
+	z-index: 12;
+	margin: -16 0 0 0;
 }
 
 h2 {
-	position: absolute;
-	margin: 50 -40;
+	display: inline;
 	color: #fff;
 	font-size: 20;
 	text-align: center;
-	font-weight: 4000;
+	font-weight: normal;
 }
 
 .button {
+	z-index: 12;
+}
+
+a {
 	text-decoration: none;
 	color: #fff;
 	font-size: 20px;
-	font-weight: 1px;
-	margin: 90 -100;
-	position: absolute;
+	font-weight: normal;
 	background-color: #006C94;
 	padding: 7 48;
 	border-radius: 30px;
 	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.35), -3px -3px 6px rgba(255, 255, 255, 0.35);
 	cursor: pointer;
+	display: inline-block;
+}
+
+a:hover {
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25), -3px -3px 3px rgba(255, 255, 255, 0.25);
 }
